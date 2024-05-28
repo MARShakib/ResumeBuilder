@@ -1,4 +1,4 @@
-#!/home/shakib/projects/ResumeBuilder/env_resume/bin/python
+#!/home/shakib/repos/ResumeBuilder/env_resume/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
