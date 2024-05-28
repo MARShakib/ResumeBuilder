@@ -1,0 +1,166 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action="{% url 'home' %}" method="post">
+    {% csrf_token %}
+
+
+    <!-- ===================PERSONAL INFORMATION====================== -->
+
+    <div class="form-container">
+        <h2>Personal Information</h2>
+        <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Md. Abdur Rahman" name="name">
+        </div>
+        <div class="mb-3">
+            <label for="name" class="form-label">About:</label>
+            <input type="text" class="form-control" id="name" placeholder=" " name="about">
+        </div>
+        <div class="mb-3">
+            <label for="age" class="form-label">Age:</label>
+            <input type="text" class="form-control" id="age" placeholder="25" name="age">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="text" class="form-control" id="email" placeholder="arahman@gmail.com" name="email">
+        </div>
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone:</label>
+            <input type="text" class="form-control" id="name" placeholder="01234567890" name="phone">
+        </div>
+        <div class="mb-3">
+            <label for="Skills" class="form-label">Skills:</label>
+            <div class="input-group">
+                <input type="text" id="skills" name="skill1" class="form-control">
+                <input type="text" id="skills" name="skill2" class="form-control">
+                <input type="text" id="skills" name="skill3" class="form-control">
+                <input type="text" id="skills" name="skill4" class="form-control">
+                <input type="text" id="skills" name="skill5" class="form-control">
+            </div>
+        </div>
+        <br>
+        <!-- =====================EDUCATION SECTION ================== -->
+
+        <!-- -----EDUCATION 1----- -->
+        <h2>Education</h2>
+        <div class="mb-3">
+            <label for="Education1" class="form-label">Education 1:</label>
+            <div class="input-group">
+                <input type="text" id="Education1" name="degree1" class="form-control" placeholder="Degree">
+                <input type="text" id="Education1" name="college1" class="form-control" placeholder="College">
+                <input type="text" id="Education1" name="year1" class="form-control" placeholder="year">
+            </div>
+        </div>
+        <!-- -----EDUCATION 2----- -->
+        <div class="mb-3">
+            <label for="Education2" class="form-label">Education 2:</label>
+            <div class="input-group">
+                <input type="text" id="Education2" name="degree2" class="form-control" placeholder="Degree">
+                <input type="text" id="Education2" name="college2" class="form-control" placeholder="College">
+                <input type="text" id="Education2" name="year2" class="form-control" placeholder="year">
+            </div>
+        </div>
+        <!-- -----EDUCATION 3----- -->
+        <div class="mb-3">
+            <label for="Education3" class="form-label">Education 3:</label>
+            <div class="input-group">
+                <input type="text" id="Education3" name="degree3" class="form-control" placeholder="Degree">
+                <input type="text" id="Education3" name="college3" class="form-control" placeholder="College">
+                <input type="text" id="Education3" name="year3" class="form-control" placeholder="year">
+            </div>
+        </div>
+        <br>
+        <!-- ================LANGUAGAES======================= -->
+        <h2>Languages</h2>
+        <div class="mb-3 ">
+            <div class="input-group">
+                <input type="text" name="lang1" class="form-control" placeholder="Language 1">
+                <input type="text" name="lang2" class="form-control" placeholder="Language 2">
+                <input type="text" name="lang3" class="form-control" placeholder="Language 3">
+            </div>
+        </div>
+        <br>
+        <!-- =====================PROJECT SECTION=================== -->
+
+        <!-- PROJECT 1 -->
+        <h2>Projects</h2>
+        <h5>Project 1</h5>
+        <div class="mb-3">
+            <div class="mb-3">
+                <label for="company1" class="form-label">Project Title :</label>
+                <input type="text" class="form-control" id="company1" name="project1">
+            </div>
+            <div class="mb-3">
+                <label for="post1" class="form-label">Duration :</label>
+                <input type="text" class="form-control" id="post1" name="durat1">
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="description1" class="form-label">Description :</label>
+            <input type="text" class="form-control" id="duration1" name="desc1">
+        </div>
+
+        <!-- PROJECT 2 -->
+
+        <h5>Project 2</h5>
+        <div class="mb-3">
+            <div class="form-group ">
+                <label for="company1" class="form-label">Project Title :</label>
+                <input type="text" class="form-control" id="company1" name="project2">
+            </div>
+            <div class="mb-3">
+                <label for="post1" class="form-label">Duration :</label>
+                <input type="text" class="form-control" id="post1" name="durat2">
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="description1" class="form-label">Description :</label>
+            <input type="text" class="form-control" id="duration1" name="desc2">
+        </div>
+        <br>
+        <!-- =======================EXPERICNECE SECTION===================== -->
+        <h2>Experiences</h2>
+        <h5>Experience 1</h5>
+        <div class="mb-3">
+            <div class="input-group">
+                <input type="text" name="company1" class="form-control" placeholder="Company Name">
+                <input type="text" name="post1" class="form-control" placeholder="Post">
+                <input type="text" name="duration1" class="form-control" placeholder="Duration">
+            </div>
+            <div class="mb-3">
+                <label for="description1" class="form-label">Description :</label>
+                <input type="text" class="form-control" name="lin11">
+            </div>
+        </div>
+        <h5>Experience 2</h5>
+        <div class="mb-3">
+            <div class="input-group">
+                <input type="text" name="company2" class="form-control" placeholder="Company Name">
+                <input type="text" name="post2" class="form-control" placeholder="Post">
+                <input type="text" name="duration2" class="form-control" placeholder="Duration">
+            </div>
+            <div class="mb-3">
+                <label for="description1" class="form-label">Description :</label>
+                <input type="text" class="form-control" name="lin21">
+            </div>
+        </div>
+        <br>
+        <!-- ==========================ACHIEVEMENT================= -->
+        <h2>Achievements</h2>
+        <div class="mb-3">
+            <label for="company1" class="form-label">Achievement 1:</label>
+            <input type="text" class="form-control" name="ach1">
+        </div>
+        <div class="mb-3">
+            <label for="post1" class="form-label">Achievement 2:</label>
+            <input type="text" class="form-control" name="ach2">
+        </div>
+        <div class="mb-3">
+            <label for="duration1" class="form-label">Achievement 3:</label>
+            <input type="text" class="form-control" name="ach3">
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+    </div>
+</form>
+{% endblock %}
