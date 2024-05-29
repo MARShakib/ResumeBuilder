@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div id="mn" class="container_resume">
+    <div class="header">
+        <br><br>
+        <h1>{{name}}</h1>
+        <h3>{{about}}</h3>
+    </div>
+    <div class="main">
+        <div class="left">
+            <h2>Personal Information</h2>
+            <p><strong>Name :</strong>{{name}}</p>
+            <p><strong>Age :</strong>{{age}} </p>
+            <p><strong>Email</strong> {{email}}</p>
+            <p><strong>Phone</strong> +91-{{phone}}</p>
+            <h2>Skills</h2>
+            <ul>
+                <li>{{skill1}}</li>
+                <li>{{skill2}}</li>
+                <li>{{skill3}}</li>
+                <li>{{skill4}}</li>
+                <li>{{skill5}}</li>
+            </ul>
+            <h2>Education</h2>
+            <h3>{{degree1}} </h3>
+            <p>{{college1}}</p>
+            <p>{{year1}}</p>
+            <br>
+            <h3>{{degree2}} </h3>
+            <p>{{college2}}</p>
+            <p> Year : {{year2}}</p>
+            <h3>{{degre3}} </h3>
+            <p>{{college3}}</p>
+            <p> Year : {{year3}}</p>
+            <h2>Languages</h2>
+            <ul>
+                <li>{{lang1}}</li>
+                <li>{{lang2}}</li>
+                <li>{{lang3}}</li>
+            </ul>
+        </div>
+        <div class="right">
+            <h2>Projects</h2>
+            <h3>{{project1}}</h3>
+            <p><strong>Duration :</strong> {{durat1}}</p>
+            <ul>
+                <li>{{desc1}}</li>
+            </ul>
+            <br>
+            <h3>{{project2}}</h3>
+            <p><strong>Duration :</strong> {{durat2}}</p>
+            <ul>
+                <li>{{desc2}}</li>
+            </ul>
+            <h2>Work Experinece</h2>
+            <h3>{{company1}}</h3>
+            <p><strong>Position:</strong> {{post1}}</p>
+            <p><strong>Duration :</strong> {{duration1}}</p>
+            <ul>
+                <li>{{lin11}}</li>
+            </ul>
+            <br><br>
+            <h3>{{company2}}</h3>
+            <p><strong>Position: </strong>{{post2}}</p>
+            <p><strong>Duration</strong> {{duration2}}</p>
+            <ul>
+                <li>{{lin21}}</li>
+            </ul>
+            <h2>Achievements :</h2>
+            <ul>
+                <li>{{ach1}}</li>
+                <li>{{ach2}}</li>
+                <li>{{ach3}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<button onclick="generatePDF('mn')" type="button" class="btn1">Download PDF</button>
+{% endblock %}
